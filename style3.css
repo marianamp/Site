@@ -1,0 +1,77 @@
+.screen{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    margin: auto;
+}
+.flex-item form{
+    width: 100%;
+}
+#leftside, #rightside{
+    text-align: center;
+    float: left;
+    min-height: 100vh;
+}
+#rightside{
+    width: 30%;
+    color:white;
+    justify-content:center;
+}
+#leftside{
+    width: 70%;
+    background:rgb(255, 255, 255);
+    justify-content:center;
+}
+h1{
+    font-size:4em;
+    color:#C72175;
+}
+h2{
+    font-size: 2em;
+}
+button{
+    background-color:#C72175;
+    color: white;
+    height: 50px;
+    width: 150px;
+    border: 0px;
+    font-size: 1em;
+    cursor: pointer;
+}
+.flex-item {
+    position: relative;
+}
+input{
+    height: 36px;
+    width: 300px;
+    border-color: #4F1180;
+    border-radius: 4px;
+    padding-left: 30px;
+    transition: 0.3s;
+}
+i{
+    position: relative;
+    left: 31px;
+    top: 7px;
+    transition: 0.3s;
+}
+input:focus {
+    border-color: #4F1180;
+    box-shadow: 0 0 8px 0 #4F1180;
+}
+input:focus + i {
+    color: #C72175;
+}
+::placeholder{
+    color: black; 
+}
+
+
